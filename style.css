@@ -29,7 +29,7 @@ hr.solid {
     width: 90%;
 }
 
-div {
+div, fieldset {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,6 +52,7 @@ input {
     font-size: x-large;
     text-align: center;
     padding: 1em;
+    margin: 1em 6em;
 }
 
 footer > small {
