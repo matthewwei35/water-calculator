@@ -2,6 +2,10 @@ const display = document.querySelector('#display')
 const weightInput = document.querySelector('#weight')
 const ageInput = document.querySelector('#age')
 const exerciseInput = document.querySelector('#exercise')
+const instructions = document.querySelector('#instructions')
+const instructionsParagraph = document.querySelector('#instructions-paragraph')
+const disclaimer = document.querySelector('#disclaimer')
+const disclaimerParagraph = document.querySelector('#disclaimer-paragraph')
 
 function calculateWater() {
     const weightValue = weightInput.value
@@ -19,9 +23,7 @@ function calculateWater() {
         ageMultiplier = 30
     }
 
-    let waterValue = (weightValue / 2.2) * ageMultiplier
-
-    waterValue = waterValue / 28.3
+    let waterValue = ((weightValue / 2.2) * ageMultiplier) / 28.3
 
     if (exerciseValue > 0) {
         waterForExercise = exerciseValue * 0.7619047619
@@ -29,12 +31,36 @@ function calculateWater() {
 
     waterValue = waterValue + waterForExercise
 
-    display.innerHTML = `${waterValue.toFixed(1)} Ounces Daily`
+    display.innerHTML = `${waterValue.toFixed(0)} Ounces Daily`
 
+}
+
+let showInstructionsParagraph = false
+
+function clickInstructions() {
+    showInstructionsParagraph = !showInstructionsParagraph
+    if (showInstructionsParagraph) {
+        instructionsParagraph.style.height = "150px"
+    } else {
+        instructionsParagraph.style.height = 0
+    }
+}
+
+let showDisclaimerParagraph = false
+
+function clickDisclaimer() {
+    showDisclaimerParagraph = !showDisclaimerParagraph
+    if (showDisclaimerParagraph) {
+        disclaimerParagraph.style.height = "150px"
+    } else {
+        disclaimerParagraph.style.height = 0
+    }
 }
 
 weightInput.addEventListener('input', calculateWater)
 ageInput.addEventListener('input', calculateWater)
 exerciseInput.addEventListener('input', calculateWater)
+instructions.addEventListener('click', clickInstructions)
+disclaimer.addEventListener('click', clickDisclaimer)
 
 calculateWater()

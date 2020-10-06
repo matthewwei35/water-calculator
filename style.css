@@ -48,11 +48,41 @@ input {
     font-size: 50px;
 }
 
-#disclaimer {
+#instructions h2 {
+    color: #fff;
+    transition: 400ms;
+}
+
+#instructions h2:hover {
+    color: cornflowerblue;
+}
+
+#instructions-paragraph {
+    height: 0;
+    overflow: hidden;
+    transition: 1000ms;
+}
+
+#disclaimer h2 {
+    color: #fff;
+    transition: 400ms;
+}
+
+#disclaimer h2:hover {
+    color: cornflowerblue;
+}
+
+#disclaimer-paragraph {
+    height: 0;
+    overflow: hidden;
+    transition: 1000ms;
+}
+
+#disclaimer, #instructions {
     font-size: x-large;
     text-align: center;
     padding: 1em;
-    margin: 1em 6em;
+    margin: 0.5em 6em;
 }
 
 footer > small {

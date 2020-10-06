@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Water Calculator</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
 </head>
     <body>
@@ -26,14 +27,24 @@
                             <input id="exercise" value="30" type="number">
                         </fieldset>
                     </form>
-                <div>
-            <section>
+                </div>
+            </section>
+
+            <section id="instructions">
+                <header>
+                    <h2>&#9432; Instructions</h2>
+                </header>
+                <p id="instructions-paragraph">
+                    Please enter in your weight (pounds), age, and amount of daily exercise (minutes).
+                    Once you enter in your info, the calculator displays the amount of water you should drink daily, in ounces.
+                </p>
+            </section>
 
             <section id="disclaimer">
                 <header>
-                    <h2>Disclaimer</h2>
+                    <h2>&#9432; Disclaimer</h2>
                 </header>
-                <p>
+                <p id="disclaimer-paragraph">
                     This calculator is just an estimate of how much water you should drink based on your weight, exercise amount, and age. 
                     It is in no way a replacement for sound advice from a medical professional.
                 </p>
