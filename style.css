@@ -81,8 +81,7 @@ input {
 #disclaimer, #instructions {
     font-size: x-large;
     text-align: center;
-    padding: 1em;
-    margin: 0.5em 6em;
+    margin: 0 6em 0 6em;
 }
 
 footer > small {

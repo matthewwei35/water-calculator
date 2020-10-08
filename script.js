@@ -31,7 +31,7 @@ function calculateWater() {
 
     waterValue = waterValue + waterForExercise
 
-    display.innerHTML = `${waterValue.toFixed(0)} Ounces Daily`
+    display.innerHTML = `${waterValue.toFixed(0)} Ounces or ${(waterValue / 8).toFixed(0)} Cups Daily`
 
 }
 
@@ -40,7 +40,7 @@ let showInstructionsParagraph = false
 function clickInstructions() {
     showInstructionsParagraph = !showInstructionsParagraph
     if (showInstructionsParagraph) {
-        instructionsParagraph.style.height = "150px"
+        instructionsParagraph.style.height = "80px"
     } else {
         instructionsParagraph.style.height = 0
     }
@@ -51,7 +51,7 @@ let showDisclaimerParagraph = false
 function clickDisclaimer() {
     showDisclaimerParagraph = !showDisclaimerParagraph
     if (showDisclaimerParagraph) {
-        disclaimerParagraph.style.height = "150px"
+        disclaimerParagraph.style.height = "80px"
     } else {
         disclaimerParagraph.style.height = 0
     }
