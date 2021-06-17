@@ -1,0 +1,25 @@
+{
+  "name": "Custom_Calculator",
+  "version": "1.0.0",
+  "description": "## Description This is a water calculator and it takes your info and outputs how much water you should drink daily. Instructions are on the page, you just have to click the '&#9432; Instructions'.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewwei35/water-calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewwei35/water-calculator/issues"
+  },
+  "homepage": "https://github.com/matthewwei35/water-calculator#readme",
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4"
+  }
+}
